@@ -110,6 +110,7 @@ $ export PROJECT_ID=<project_id>
 $ export RELEASE_ID=<release_id>
 $ export DISTRIBUTION_ID=<distribution_id>
 ```
+##### `Run the testsuite`
 ```sh
 $ bash -x runAll.sh
 ```
@@ -149,6 +150,7 @@ $ export PROJECT_ID=<project_id>
 $ export RELEASE_ID=<release_id>
 $ export DISTRIBUTION_ID=<distribution_id>
 ```
+##### `Run the testsuite`
 ```sh
 # Specify the application folder name which you want to Test locally.
 $ cd gpctl-testsuite/apps/<App_Folder>
