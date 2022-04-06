@@ -88,9 +88,10 @@ $ chmod +x cleanUp.sh
 $ bash -x cleanUp.sh
 $ bash -x setUp.sh
 ```
+> Note: If you are using pre-existing project, you can skipe the `Create Dependency Resource` part. Instead you have to export the below envs i.e, go with `Use Pre-existing Resource` part:
 
 ##### `Create Dependency Resource:`
-Create all the gpctl dependency resources (Registry, github scm(Need to be register gopaddle-demo handle), cluster & allocation policy):-
+GPCTL regression will automatically create all the gpctl dependency resources (Registry, github scm(Need to be register gopaddle-demo handle), cluster & allocation policy):-
 
 ```sh
 # Project Initial Setup. 
@@ -102,8 +103,8 @@ $ export DISTRIBUTION_ID=`jq .distribution[0].id ./templates/output/distribution
 [ $CREATE_NEW_CLUSTER = "YES" ] && export CLUSTER_ID=`jq .id ./templates/output/cluster_Create_Resp.json | tr -d '"'` || echo "GPCTL INIT will take pre-existing cluster"
 $ cd ..
 ```
-> Note: If you are using pre-existing project, you can skipe the `Create Dependency Resource` part. Instead you have to export the below envs:
-
+##### `Use Pre-existing Resource:`
+You manually have to create all the gpctl dependency resources (Registry, github scm(Need to be register gopaddle-demo handle), cluster & allocation policy):-
 ```sh
 $ export PROJECT_ID=<project_id>
 $ export RELEASE_ID=<release_id>
@@ -125,8 +126,10 @@ $ bash -x cleanUp.sh
 $ bash -x setUp.sh
 ```
 
+> Note: If you are using pre-existing project, you can skipe the `Create Dependency Resource` part. Instead you have to export the below envs i.e, go with `Use Pre-existing Resource` part:
+
 ##### `Create Dependency Resource:`
-Create all the gpctl dependency resources (Registry, github scm(Need to be register gopaddle-demo handle), cluster & allocation policy):-
+GPCTL regression will automatically create all the gpctl dependency resources (Registry, github scm(Need to be register gopaddle-demo handle), cluster & allocation policy):-
 
 ```sh
 # Project Initial Setup. 
@@ -138,7 +141,9 @@ $ export DISTRIBUTION_ID=`jq .distribution[0].id ./templates/output/distribution
 [ $CREATE_NEW_CLUSTER = "YES" ] && export CLUSTER_ID=`jq .id ./templates/output/cluster_Create_Resp.json | tr -d '"'` || echo "GPCTL INIT will take pre-existing cluster"
 $ cd ..
 ```
-> Note: If you are using pre-existing project, you can skipe the `Create Dependency Resource` part. Instead you have to export the below envs:
+##### `Create Dependency Resource`:
+You manually have to create all the gpctl dependency resources (Registry, github scm(Need to be register gopaddle-demo handle), cluster & allocation policy):-
+
 ```sh
 $ export PROJECT_ID=<project_id>
 $ export RELEASE_ID=<release_id>
